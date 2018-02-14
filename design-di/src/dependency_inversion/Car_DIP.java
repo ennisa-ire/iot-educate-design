@@ -3,21 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package single_responsibility;
-
+package dependency_inversion;
+ 
+import business.Cost;
+import business.Model;
+import components.Part;
 import java.util.ArrayList;
+
+
+
+
 
 /**
  *
  * @author ae
- * 1. 
- */
-public class Car {
-    Cost cost;
-    Model model;
-    ArrayList<Part> parts;
+Responsibliity
+* is to hold the components together!!!!
+* It should only change if, new parts are added to the car!!!
 
+ */
+public class Car_DIP {
     
+    Cost cost;      
+    Model model;
+    ArrayList<Part> parts; // Car depends on parts to be a car!!!
+    
+    
+    // Losely Coupled
     public void setCost(Cost cost) {
         // if not  null - else throug paramter exception!!!
     };

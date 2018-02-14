@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package single_responsibility;
+package simulator;
 
 /**
  *
  * @author ae
  */
-public class Steering {
+public class Dashboard {
     
 }

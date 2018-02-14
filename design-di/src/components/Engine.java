@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package single_responsibility;
+package components;
 
 /**
  *
  * @author ae
  */
-public class Breaks {
-    private int force=0;
+public class Engine {
 
-    
-    
-    
-    
-    public void stop () {
-        
+    private String size;
+
+    public Engine(String size) {
+        this.size = size;
     }
 
-    
+    public void start() {
+
+    }
+
 }

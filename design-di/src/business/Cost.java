@@ -3,22 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package single_responsibility;
+package business;
 
 /**
  *
  * @author ae
  */
-public class Engine {
-        private String size;
+public class Cost {
+    
+    private float price;
 
-    public Engine(String size) {
-        this.size = size;
+    public Cost(float price) {
+        this.price = price;
     }
-       
-        
-        public void start () {
-        
-        }
 
+    
+    
+    
 }

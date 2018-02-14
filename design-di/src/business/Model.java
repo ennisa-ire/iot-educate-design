@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package single_responsibility;
+package business;
 
 /**
  *
  * @author ae
  */
-class Model {
+public class Model {
     private String name;
     private String version;
 

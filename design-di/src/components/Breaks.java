@@ -3,20 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package single_responsibility;
+package components;
 
 /**
  *
  * @author ae
  */
-class Cost {
-    private float price;
+public class Breaks {
+    private int force=0;
 
-    public Cost(float price) {
-        this.price = price;
+    
+    
+
+    
+    public void stop () {
+        
     }
 
-    
-    
     
 }
