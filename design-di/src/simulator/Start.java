@@ -5,6 +5,17 @@
  */
 package simulator;
 
+import business.Cost;
+import business.Model;
+import components.Breaks;
+import components.Engine;
+import components.Part;
+import components.Steering;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import ux.Dashboard;
+
 /**
  *
  * @author ae
@@ -27,11 +38,52 @@ public class Start {
 
     // Lets Start To Drive!!!! Press Q to quit, up/down to control speed. 
     
-    public static void main (String args[]) {
+    public static void main (String args[]) throws InterruptedException {
+        Dashboard dash = new Dashboard("0", "0", "0", "0", "0");
+        Cost cost;      
+        Model model = null;
+
+        Assembley car = new Assembley();
+        // Spawn a new thread 
+    
+        // Select Model
         
+        if (model.getName().contains("maxi") ) {
+            // Assemble Maxi
+            car.addPart(new Engine("1000")).addPart(new Breaks("Shamano")).addPart(new Steering(null));
+        
+        } else {
+            // Assemble Mini
+            
+        }
+        
+        // Initialise Dashboard
+        
+        // Read Input
+        while (true) {            
+            Thread.sleep(1000);
+            try {
+                
+                int x = System.in.read();
+
+                // Update State
+                if (x == 25) {
+                    // inc speed 
+                    dash.setSpeed("10");
+                    // update dashboard
+                }
+                
+            } catch (IOException ex) {
+                Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+        }
         
         // Swing It!!!
         
+    
+    
+    
     }
 
 }

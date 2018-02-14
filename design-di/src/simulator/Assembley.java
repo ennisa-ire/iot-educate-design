@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dependency_inversion;
+package simulator;
  
 import business.Cost;
 import business.Model;
 import components.Part;
+import design.I_Part;
 import java.util.ArrayList;
 
 
@@ -22,24 +23,15 @@ Responsibliity
 * It should only change if, new parts are added to the car!!!
 
  */
-public class Car_DIP {
+public class Assembley {
     
-    Cost cost;      
-    Model model;
-    ArrayList<Part> parts; // Car depends on parts to be a car!!!
+    ArrayList<I_Part> parts; // Car depends on parts to be a car!!!
     
-    
-    // Losely Coupled
-    public void setCost(Cost cost) {
-        // if not  null - else throug paramter exception!!!
-    };
-    public void setModel(Model model) {
-        // if not  null - else throug paramter exception!!!
-    };
 
-    public void addPart(Part part) {
+    public Assembley addPart(I_Part part) {
         // if not  null - else throug paramter exception!!!
         parts.add(part);
+        return this;
     };
     
 }

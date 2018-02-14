@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package simulator;
+package design;
 
 /**
  *
  * @author ae
  */
-public class Dashboard {
-    
+public interface I_Part {
+ 
+    public void setName(String partName);
+    public String getName();
+
 }

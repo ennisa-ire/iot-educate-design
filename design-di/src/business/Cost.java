@@ -10,14 +10,15 @@ package business;
  * @author ae
  */
 public class Cost {
-    
+
     private float price;
 
     public Cost(float price) {
         this.price = price;
     }
 
-    
-    
-    
+    public static void main(String args[]) {
+
+    }
+
 }

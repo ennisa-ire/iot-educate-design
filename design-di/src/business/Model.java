@@ -10,15 +10,15 @@ package business;
  * @author ae
  */
 public class Model {
+
     private String name;
     private String version;
 
-    
     public Model(String name, String version) {
         this.name = name;
         this.version = version;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -27,6 +27,11 @@ public class Model {
         return version;
     }
 
-   
-    
+    public static void main(String args[]) {
+        
+        Model mini = new Model("mini", "500");
+        Model maxi = new Model("maxi", "1000");
+        
+    }
+
 }

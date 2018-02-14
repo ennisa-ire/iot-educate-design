@@ -5,11 +5,13 @@
  */
 package components;
 
+import design.I_Part;
+
 /**
  *
  * @author ae
  */
-public class Steering {
+public class Steering implements I_Part {
 
     public Bearing newDirection, currentDirection;
 
@@ -17,6 +19,19 @@ public class Steering {
         this.newDirection = newDirection;
     }
 
+     String name;
+    
+    
+ @Override
+    public void setName(String partName) {
+        this.name = partName;
+     }
+
+    @Override
+    public String getName() {
+        return this.name;
+     }
+    
     // The new bearing is
     public void compute() {
         currentDirection = this.newDirection; //this.degrees;
@@ -28,4 +43,8 @@ public class Steering {
         }
     }
 
+    public static void main(String args[]) {
+
+    }
+    
 }

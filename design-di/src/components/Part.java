@@ -10,5 +10,9 @@ package components;
  * @author ae
  */
 public class Part {
+    String name;
     
+    public static void main(String args[]) {
+
+    }
 }

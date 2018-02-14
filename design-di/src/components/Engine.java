@@ -5,11 +5,13 @@
  */
 package components;
 
+import design.I_Part;
+
 /**
  *
  * @author ae
  */
-public class Engine {
+public class Engine implements I_Part{
 
     private String size;
 
@@ -17,8 +19,23 @@ public class Engine {
         this.size = size;
     }
 
+     String name;
+    
+    
+ @Override
+    public void setName(String partName) {
+        this.name = partName;
+     }
+
+    @Override
+    public String getName() {
+        return this.name;
+     }
+    
     public void start() {
 
     }
+public static void main(String args[]) {
 
+    }
 }
