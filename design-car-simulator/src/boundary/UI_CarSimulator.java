@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ux;
+package boundary;
 
 import controllers.ControlCar;
 import entites.Assembley;
