@@ -4,24 +4,24 @@
  * and open the template in the editor.
  */
 package simulator;
-
-import business.Cost;
-import business.Model;
-import components.Breaks;
-import components.Engine;
-import components.Part;
-import components.Steering;
+ 
+import entites.Assembley;
+import entites.Model;
+import entites.Breaks;
+import entites.Engine;
+import entites.Part;
+import entites.Steering;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import ux.Dashboard;
+import boundary.Dashboard;
 
 /**
  *
  * @author ae
  * I am a client class, to do want I want to do, i will need the following.
  */
-public class Start {
+public class StartUp {
     // Welcome to the Runtime Engine - Herby Goes Bananas!!!
     
     // Inputs
@@ -39,8 +39,8 @@ public class Start {
     // Lets Start To Drive!!!! Press Q to quit, up/down to control speed. 
     
     public static void main (String args[]) throws InterruptedException {
+        
         Dashboard dash = new Dashboard("0", "0", "0", "0", "0");
-        Cost cost;      
         Model model = null;
 
         Assembley car = new Assembley();
@@ -74,7 +74,7 @@ public class Start {
                 }
                 
             } catch (IOException ex) {
-                Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(StartUp.class.getName()).log(Level.SEVERE, null, ex);
             }
             
         }

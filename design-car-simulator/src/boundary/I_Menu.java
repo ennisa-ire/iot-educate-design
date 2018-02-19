@@ -3,22 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package business;
+package boundary;
 
 /**
  *
  * @author ae
  */
-public class Cost {
-
-    private float price;
-
-    public Cost(float price) {
-        this.price = price;
-    }
-
-    public static void main(String args[]) {
-
-    }
-
+public interface I_Menu {
+    
+    public void inputs();
+    public void outputs();  // outputs
+    public void refresh();
+    public void clear();
+    
+    
 }

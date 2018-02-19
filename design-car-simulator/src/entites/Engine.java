@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package components;
-
-import design.I_Part;
+package entites;
 
 /**
  *
  * @author ae
  */
-public class Breaks implements I_Part {
-    private int force=0;
-    String name;
+public class Engine implements I_Part{
 
-    public Breaks(String shamano) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private String size;
+
+    public Engine(String size) {
+        this.size = size;
     }
+
+     String name;
     
     
  @Override
@@ -30,15 +30,10 @@ public class Breaks implements I_Part {
         return this.name;
      }
     
-    public void stop () {
-        
-    }
-
-    public static void main(String args[]) {
+    public void start() {
 
     }
+public static void main(String args[]) {
 
-   
-
-    
+    }
 }

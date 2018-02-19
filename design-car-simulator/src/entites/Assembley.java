@@ -3,12 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package simulator;
+package entites;
  
-import business.Cost;
-import business.Model;
-import components.Part;
-import design.I_Part;
+import entites.I_Part;
 import java.util.ArrayList;
 
 
@@ -25,7 +22,7 @@ Responsibliity
  */
 public class Assembley {
     
-    ArrayList<I_Part> parts; // Car depends on parts to be a car!!!
+    ArrayList<I_Part> parts =  new ArrayList<>(); // Car depends on parts to be a car!!!
     
 
     public Assembley addPart(I_Part part) {

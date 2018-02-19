@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package business;
+package entites;
 
 /**
  *
  * @author ae
  */
-public class Model {
+public class Model implements I_Part {
 
     private String name;
     private String version;
@@ -17,6 +17,11 @@ public class Model {
     public Model(String name, String version) {
         this.name = name;
         this.version = version;
+    }
+ 
+    @Override
+    public void setName(String partName) {
+        name=partName;
     }
 
     public String getName() {
@@ -34,4 +39,5 @@ public class Model {
         
     }
 
+   
 }
